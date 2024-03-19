@@ -85,18 +85,12 @@ const Checkout = () => {
       <hr className='mt-4'/>
       {['checkbox', 'checkbox'].map((type) => (
         <div key={type} className="mb-3">
-          <Form.Check type={type} id={`check-api-${type}`}>
-            <Form.Check.Input type={type} isValid />
-            <Form.Check.Label>{`Custom api ${type}`}</Form.Check.Label>
-            <Form.Control.Feedback type="valid">
-              You did it!
-            </Form.Control.Feedback>
-          </Form.Check>
+          <Form.Check type={type} id={`check-api-${type}`} label={`Custom api ${type}`} />
         </div>
       ))}
       <hr className='mt-4'/>
        <h4 className='mb-4'>Payment</h4>
-       {['radio', 'radio','radio'].map((type) => (
+       {['radio', 'radio', 'radio'].map((type) => (
         <div key={type} className="mb-3">
           <Form.Check type={type} id={`check-api-${type}`}>
             <Form.Check.Input type={type} isValid />
